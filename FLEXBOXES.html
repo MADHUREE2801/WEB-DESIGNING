@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+       .myhome{
+           grid-area:myhome;
+       }
+       .gallery{
+           grid-area: gallery;
+       }
+       .aboutus{
+           grid-area: aboutus;
+       }
+       .contactus
+       {
+           grid-area: contactus;
+       }
+       .products{
+           grid-area: products;
+       }
+       .maindiv{
+           display:grid;
+           grid-template-areas:
+           'myhome myhome myhome myhome myhome myhome'
+           'gallery gallery gallery aboutus aboutus aboutus'
+            'contactus contactus contactus products products products';
+            grid-gap:5px;
+            background-color: rgb(187,187,117);
+            border-radius:30px;
+            margin:30px;
+       
+        }
+        .maindiv >div{
+            background-color: lightblue;
+            padding: 30px;
+            margin:30px;
+            border-radius: 10px;
+            font-size: large;
+        }
+        .header{
+            top:0px;
+            width:100%;
+            position:fixed;
+            background-color: teal;
+            padding:20px;
+            color:white;
+        }
+        body{
+           padding-top: 70px;
+           
+        }
+        .footer{
+            bottom:0px;
+            width: 100%;
+            position: fixed;
+            background-color: teal;
+            padding: 20px;
+            color: white;
+        }
+   </style>
+
+</head>
+<body>
+    <div class="header">
+        <h4 style="text-align: center;">WELCOME</h4>
+    </div>
+    <div align="center" class="maindiv">
+        <div class="myhome">Home</div>
+        <div class="gallery">gallery</div>
+        <div class="aboutus">aboutus</div>
+        <div class="contactus">contactus</div>
+        <div class="products">products</div>
+        
+    </div>
+    <div class="footer">
+        <h4 style="text-align: center;">
+         Thank you for visiting my page
+        </h4>
+    </div>
+</body>
+</html>

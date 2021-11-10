@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <div align="center">
+        <p id="myresult"></p>
+        <br>
+        <p>Hello</p>
+        <br>
+        <p class="mysecondresult"></p>
+    </div>
+    <!--DOM stands for Document Object Model-->
+    <script>
+        //Tag name
+        //class name
+        //Id name
+        //we give index numbers incase if we have more than 1 class name or tag name,it can find out easily
+
+        document.getElementsByClassName('mysecondresult')[0].innerHTML="Hello HummingBird"
+        document.getElementsByTagName('p')[0].innerHTML="Huuuuuming"
+        
+    </script>
+
+</body>
+</html>
